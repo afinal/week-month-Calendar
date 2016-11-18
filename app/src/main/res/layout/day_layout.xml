@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46.7dp"
+    android:background="@drawable/bg_btn_calendar"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="6.7dp"
+    android:paddingTop="6.7dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <View
+            android:id="@+id/view_point"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_calendar_point_blue"
+            android:visibility="invisible" />
+
+        <com.eroad.widget.calendar.widget.DayView
+            android:id="@+id/tvDayView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_point"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_calendar"
+            android:textSize="18sp" />
+
+        <com.eroad.widget.calendar.widget.DayView
+            android:id="@+id/tvChina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDayView"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_calendar"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_day_type"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/bg_day_type_red"
+            android:gravity="center"
+            android:text="班"
+            android:textColor="@color/cal_color_white"
+            android:textSize="8sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>
